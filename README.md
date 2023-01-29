@@ -1,6 +1,8 @@
 # How to make Next Auth work with Capacitor
 > Based on a discussion: https://github.com/nextauthjs/next-auth/discussions/4446
 
+> Don't know much about Capacitor? Read this https://devdactic.com/nextjs-and-capacitor
+
 If you have a Next.js application, you may know you can run it natively on Android or iOS using Capacitor.
 
 Next Auth however doesn't work straight out the box. This repository shows that you can use some workarounds to make it work.
