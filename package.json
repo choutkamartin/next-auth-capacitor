@@ -1,0 +1,39 @@
+{
+  "name": "next-auth-capacitor",
+  "version": "1.0.0",
+  "description": "Example project how to run Next and Next Auth as native app using Capacitor",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "static": "next build && next export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/choutkamartin/next-auth-capacitor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/choutkamartin/next-auth-capacitor/issues"
+  },
+  "homepage": "https://github.com/choutkamartin/next-auth-capacitor#readme",
+  "dependencies": {
+    "@awesome-cordova-plugins/in-app-browser": "^6.3.0",
+    "@capacitor/android": "^4.6.2",
+    "@capacitor/core": "^4.6.2",
+    "@capacitor/ios": "^4.6.2",
+    "@capacitor/network": "^4.1.0",
+    "cordova-plugin-inappbrowser": "^5.0.0",
+    "next": "^13.1.6",
+    "next-auth": "^4.19.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^4.6.2",
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.27",
+    "typescript": "^4.9.4"
+  }
+}
