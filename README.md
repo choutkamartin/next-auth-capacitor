@@ -1,5 +1,6 @@
 # How to make Next Auth work with Capacitor
 > Based on a discussion: https://github.com/nextauthjs/next-auth/discussions/4446
+> Thanks to @creativiii
 
 > Don't know much about Capacitor? Read this https://devdactic.com/nextjs-and-capacitor
 
