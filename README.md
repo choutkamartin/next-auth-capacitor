@@ -50,7 +50,7 @@ async headers() {
     ];
   },
 ```
-### 3. Create own oAuth flow 
+### 3. Create own OAuth flow 
 See `utils/helper.ts`
 
 ### 4. Create own UseSession provider
