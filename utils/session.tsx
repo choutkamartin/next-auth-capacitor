@@ -35,8 +35,3 @@ export function UseSession({ children }: { children: any }) {
     </SessionContext.Provider>
   );
 }
-
-export const callback = () => {
-  const router = useRouter();
-  router.reload();
-};

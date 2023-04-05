@@ -1,6 +1,5 @@
 import NextAuth, { NextAuthOptions } from "next-auth";
 import GithubProvider from "next-auth/providers/github";
-import appConfig from "../../../app.config";
 
 /**
  * There is a need to modify the cookies

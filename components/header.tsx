@@ -23,16 +23,6 @@ export default function Header() {
               <span className={styles.notSignedInText}>
                 You are not signed in
               </span>
-              <a
-                href={`${appConfig.apiHost}/api/auth/signin`}
-                className={styles.buttonPrimary}
-                onClick={(e) => {
-                  e.preventDefault();
-                  signIn();
-                }}
-              >
-                Sign in
-              </a>
             </>
           )}
           {session?.user && (

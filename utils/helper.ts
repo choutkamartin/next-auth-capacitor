@@ -28,7 +28,7 @@ export const loginWithGithub = async (callback: () => void) => {
       body: new URLSearchParams({
         csrfToken,
         json: "true",
-        callbackUrl: `${appConfig.apiHost}`,
+        callbackUrl: `${appConfig.apiHost}/me`,
       }),
       redirect: "follow",
       credentials: "include",
@@ -55,10 +55,9 @@ export const loginWithGithub = async (callback: () => void) => {
   if (ref) {
     /**
      * Here we can check if we've been successfully redirected, if we have we close the browser
-     * We did not specify a callbackUrl with /redirect though, so the browser won't close
      */
     ref!.on("loadstart").subscribe((e: any) => {
-      const includesUrl = e.url.includes(`/redirect`);
+      const includesUrl = e.url.includes(`/me`);
       if (includesUrl) {
         ref.close();
       }
