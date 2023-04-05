@@ -23,7 +23,7 @@ export const authOptions: NextAuthOptions = {
         httpOnly: true,
         sameSite: "none",
         path: "/",
-        domain: `.${appConfig.apiHost}`,
+        domain: `.next-auth-capacitor.vercel.app`,
         secure: useSecureCookies,
       },
     },
