@@ -16,7 +16,7 @@ Next Auth however doesn't work straight out the box. This repository shows that 
 Basic Capacitor knowledge required.
 
 Tips:
-1. Use chrome://inspect/#devices to inspect the webview of your application. You can inspect cookies of your app this way.
+1. Use `chrome://inspect/#devices` to inspect the webview of your application. You can inspect cookies of your app this way.
 
 ## What you need to do:
 ### 1. Change capacitor.config.ts to:
