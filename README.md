@@ -1,22 +1,24 @@
 # How to make Next Auth work with Capacitor
-**This is an example of a production use. It doesn't work straight out of the box on `localhost`, as the application that runs on on Vercel doesn't allow requests from `localhost`.**
+## Before you start
+**This is an example of a production use.** **It doesn't work straight out of the box on `localhost`**, as the application that runs on on Vercel doesn't allow requests from `localhost`. (See https://github.com/choutkamartin/next-auth-capacitor/issues/4)
 
-**This is an example of how would you authenticate user from your built Android application against a Next.js application running on a distant server.**
+This is an example of how would you authenticate user from your built Android application against a Next.js application running on a distant server.
 
-> Based on a discussion: https://github.com/nextauthjs/next-auth/discussions/4446
-
-> Thanks to [@creativiii](https://github.com/creativiii)
-
-> Don't know much about Capacitor? Read this https://devdactic.com/nextjs-and-capacitor
-
+## What is this?
 If you have a Next.js application, you may know you can run it natively on Android or iOS using Capacitor.
 
 Next Auth however doesn't work straight out the box. This repository shows that you can use some workarounds to make it work.
 
 Basic Capacitor knowledge required.
 
-Tips:
+## Tips
 1. Use `chrome://inspect/#devices` to inspect the webview of your application. You can inspect cookies of your app this way.
+2. Don't know much about Capacitor? Read this https://devdactic.com/nextjs-and-capacitor
+
+## Caveats
+1. iOS as a system doesn't allow the usage of `https` scheme, which is something we rely on in this repository, as we want our application to have a hostname with the `https` scheme
+https://forum.ionicframework.com/t/https-for-the-app-server-protocol-instead-of-capacitor-on-ios/200116/2
+
 
 ## What you need to do:
 ### 1. Change capacitor.config.ts to:
@@ -67,3 +69,7 @@ See `pages/_app.tsx`
 
 ### 6. Modify Next Auth config
 See `pages/api/auth/[...nextauth].ts`
+
+---
+Based on a discussion: https://github.com/nextauthjs/next-auth/discussions/4446
+Thanks to [@creativiii](https://github.com/creativiii)
