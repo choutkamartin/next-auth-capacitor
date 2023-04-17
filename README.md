@@ -16,8 +16,10 @@ Basic Capacitor knowledge required.
 2. Don't know much about Capacitor? Read this https://devdactic.com/nextjs-and-capacitor
 
 ## Caveats
-1. iOS as a system doesn't allow the usage of `https` scheme, which is something we rely on in this repository, as we want our application to have a hostname with the `https` scheme
-https://forum.ionicframework.com/t/https-for-the-app-server-protocol-instead-of-capacitor-on-ios/200116/2
+### iOS and the forbidden usage of https scheme
+iOS as a system doesn't allow the usage of `https` scheme, which is something we rely on in this repository, as we want our application to have a hostname with the `https` scheme
+
+Read more at: https://forum.ionicframework.com/t/https-for-the-app-server-protocol-instead-of-capacitor-on-ios/200116/2
 
 
 ## What you need to do:
