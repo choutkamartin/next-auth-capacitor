@@ -1,4 +1,6 @@
 # How to make Next Auth work with Capacitor
+**This is an example of a production use. It doesn't work straight out of the box on `localhost`, as the application that runs on on Vercel doesn't allow requests from `localhost`. This is example of how would you authenticate user from your built Android application against a Next.js application running on distant server. **
+
 > Based on a discussion: https://github.com/nextauthjs/next-auth/discussions/4446
 
 > Thanks to [@creativiii](https://github.com/creativiii)
